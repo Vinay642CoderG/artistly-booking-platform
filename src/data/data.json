@@ -1,0 +1,154 @@
+{
+  "categories": [
+    {
+      "id": "singer",
+      "name": "Singers",
+      "description": "Vocalists for events, weddings, and concerts",
+      "imageUrl": "https://images.pexels.com/photos/6670756/pexels-photo-6670756.jpeg"
+    },
+    {
+      "id": "dancer",
+      "name": "Dancers",
+      "description": "Professional performers in classical and modern styles",
+      "imageUrl": "https://images.pexels.com/photos/209948/pexels-photo-209948.jpeg"
+    },
+    {
+      "id": "speaker",
+      "name": "Speakers",
+      "description": "Motivational speakers and industry experts",
+      "imageUrl": "https://images.pexels.com/photos/8345978/pexels-photo-8345978.jpeg"
+    },
+    {
+      "id": "dj",
+      "name": "DJs",
+      "description": "Party DJs and music mixers for live events",
+      "imageUrl": "https://images.pexels.com/photos/332688/pexels-photo-332688.jpeg"
+    }
+  ],
+  "locations": ["Mumbai", "Delhi", "Bangalore", "Hyderabad", "Kolkata"],
+  "artists": [
+    {
+      "id": 101,
+      "name": "Ariana Sharma",
+      "category": "Singer",
+      "location": "Mumbai",
+      "price_range": "₹20,000 - ₹30,000",
+      "bio": "Professional Bollywood and Indie singer with 5+ years of stage experience.",
+      "imageUrl": "https://images.pexels.com/photos/6670756/pexels-photo-6670756.jpeg",
+      "ratings": 4.5,
+      "availability": ["2025-06-25", "2025-06-28"],
+      "manager_id": 3
+    },
+    {
+      "id": 102,
+      "name": "Rhythm Crew",
+      "category": "Dancer",
+      "location": "Delhi",
+      "price_range": "₹35,000 - ₹50,000",
+      "bio": "High-energy dance group specializing in Hip-Hop and Bhangra performances.",
+      "imageUrl": "https://images.pexels.com/photos/6044063/pexels-photo-6044063.jpeg",
+      "ratings": 4.7,
+      "availability": ["2025-07-01", "2025-07-04"],
+      "manager_id": 4
+    },
+    {
+      "id": 103,
+      "name": "DJ Roxy",
+      "category": "DJ",
+      "location": "Bangalore",
+      "price_range": "₹15,000 - ₹25,000",
+      "bio": "Popular club DJ with an electrifying presence and vast EDM collection.",
+      "imageUrl": "https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg",
+      "ratings": 4.3,
+      "availability": ["2025-06-26", "2025-07-02"],
+      "manager_id": 4
+    },
+    {
+      "id": 104,
+      "name": "Magic Max",
+      "category": "Magician",
+      "location": "Hyderabad",
+      "price_range": "₹10,000 - ₹20,000",
+      "bio": "Interactive illusionist with family-friendly stage shows and party packages.",
+      "imageUrl": "https://images.pexels.com/photos/6001362/pexels-photo-6001362.jpeg",
+      "ratings": 4.2,
+      "availability": ["2025-06-30", "2025-07-05"],
+      "manager_id": 3
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1001,
+      "artist_id": 101,
+      "planner_id": 1,
+      "event_date": "2025-06-28",
+      "status": "pending",
+      "message": "Is Ariana available for a corporate event?"
+    },
+    {
+      "id": 1002,
+      "artist_id": 103,
+      "planner_id": 2,
+      "event_date": "2025-07-02",
+      "status": "confirmed",
+      "message": "Booking DJ Roxy for a wedding reception."
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "planner_john",
+      "password": "john1234",
+      "email": "john.doe@events.com",
+      "role": "event_planner",
+      "full_name": "John Doe",
+      "company": "Elite Events Inc.",
+      "phone": "+91-9876543210",
+      "profile_picture": "/images/users/john.jpg"
+    },
+    {
+      "id": 2,
+      "username": "planner_maya",
+      "password": "maya5678",
+      "email": "maya.singh@plannerhub.com",
+      "role": "event_planner",
+      "full_name": "Maya Singh",
+      "company": "PlannerHub",
+      "phone": "+91-9823456789",
+      "profile_picture": "/images/users/maya.jpg"
+    },
+    {
+      "id": 3,
+      "username": "manager_rahul",
+      "password": "rahul@2023",
+      "email": "rahul.verma@artistagent.com",
+      "role": "artist_manager",
+      "full_name": "Rahul Verma",
+      "agency": "ArtistAgent Co.",
+      "phone": "+91-9845678901",
+      "profile_picture": "/images/users/rahul.jpg"
+    },
+    {
+      "id": 4,
+      "username": "manager_lisa",
+      "password": "lisa!2023",
+      "email": "lisa.taylor@stagebook.com",
+      "role": "artist_manager",
+      "full_name": "Lisa Taylor",
+      "agency": "Stagebook Talent",
+      "phone": "+91-9934567890",
+      "profile_picture": "/images/users/lisa.jpg"
+    },
+    {
+      "id": 5,
+      "username": "admin_amit",
+      "password": "admin_amit",
+      "email": "amit.kumar@artistly.com",
+      "role": "admin",
+      "full_name": "Amit Kumar",
+      "phone": "+91-9999999999",
+      "profile_picture": "/images/users/amit.jpg",
+      "access_level": "super_admin"
+    }
+  ]
+}

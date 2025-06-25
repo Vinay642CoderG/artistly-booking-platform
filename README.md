@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎭 Artistly – Performing Artist Booking Platform (Frontend Demo)
 
-## Getting Started
+Artistly is a demo platform that connects event planners with talented performing artists like Singers, Dancers, DJs, and Speakers. This is a **frontend-only project** built using **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**, powered by dummy JSON data.
 
-First, run the development server:
+---
+
+## 📄 Key Pages (3–4 Main Pages)
+
+### 1. 🏠 Homepage (`/`)
+
+- Hero section with background image and call-to-action button
+- 3–4 artist category cards (e.g., Singers, Dancers, DJs, Speakers)
+- Navigation links to Artists, About, and Contact pages
+- Responsive layout using Tailwind CSS
+
+### 2. 📋 Artist Listing Page (`/artists`)
+
+- Grid layout of artist cards with filtering controls
+- Each artist card displays:
+  - Name
+  - Category
+  - Price Range
+  - Location
+  - "Ask for Quote" CTA
+- Filtering options include:
+  - Category (dropdown)
+  - Location (dropdown)
+  - Price Range (min–max inputs)
+- Uses reusable components:
+  - `ArtistCard`
+  - `FilterBlock`
+- Fully responsive (Grid on desktop, List on mobile)
+
+### 3. ✍️ Artist Onboarding Form (`/onboard`)
+
+- Multi-section form to collect artist details:
+  - Name
+  - Bio
+  - Category (multi-select with checkboxes)
+  - Languages Spoken (multi-select with checkboxes)
+  - Fee Range (dropdown)
+  - Profile Image Upload (optional)
+  - Location (text input)
+- Form validation using **Formik + Yup**
+- Submits data to a mock handler or logs to the console
+- Uses controlled components and accessible UI
+
+### 4. 📊 Manager Dashboard (Optional, `/dashboard`)
+
+- Simple table displaying list of submitted artists
+- Columns include:
+  - Name
+  - Category
+  - Location
+  - Fee Range
+  - Action Button (e.g., View or Approve)
+
+---
+
+## 📎 Additional Pages
+
+### 📖 About Page (`/about`)
+
+- Short overview of the platform
+- Can include a mission statement or founder info
+
+### 📞 Contact Page (`/contact`)
+
+- Simple contact form or details for support
+
+### 🔐 Privacy Policy (`/privacy-policy`)
+
+- Static page outlining privacy and data usage policy
+
+### 📜 Terms & Conditions (`/terms`)
+
+- Static page outlining terms of service and usage rules
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Forms**: Formik + Yup
+- **State Management**: Context API (for auth/global state)
+- **Routing**: App Router (`app/` directory)
+- **Assets**: Static JSON data (for artists, categories, etc.)
+
+---
+
+## 🚀 Setup Instructions
 
 ```bash
+# Clone the repo
+git clone https://github.com/your-username/artistly.git
+cd artistly
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Then visit
+http://localhost:3000
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

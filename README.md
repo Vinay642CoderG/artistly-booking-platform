@@ -82,8 +82,8 @@ Artistly is a demo platform that connects event planners with talented performin
 
 - **Framework**: Next.js (App Router)
 - **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Forms**: Formik + Yup
+- **Styling**: Tailwind CSS + Shadcn
+- **Forms**: Formik or Yup, react hook form
 - **State Management**: Context API (for auth/global state)
 - **Routing**: App Router (`app/` directory)
 - **Assets**: Static JSON data (for artists, categories, etc.)

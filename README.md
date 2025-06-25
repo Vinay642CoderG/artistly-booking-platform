@@ -94,7 +94,7 @@ Artistly is a demo platform that connects event planners with talented performin
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/artistly.git
+git clone https://github.com/Vinay642CoderG/artistly.git
 cd artistly
 
 # Install dependencies

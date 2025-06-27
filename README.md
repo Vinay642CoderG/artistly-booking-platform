@@ -106,3 +106,6 @@ npm run dev
 # Then visit
 http://localhost:3000
 ```
+
+## Admin Login cred
+username & password: admin_amit
